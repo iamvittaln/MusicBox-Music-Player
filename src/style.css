@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Oswald:wght@600&family=Roboto+Slab&display=swap');
+
+body {
+    background-color: antiquewhite;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    font-family: 'Open Sans', sans-serif;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 70px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li {
+    padding: 0 12px;
+}
+
+a.nav--link:link,a.nav--link:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a.nav--link:active,a.nav--link:hover {
+    color:aqua;
+}
+
+.logo img {
+    width: 64px;
+    padding: 0 3px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.container
+{
+    display:flex;
+    justify-content: space-around;
+    margin:25px auto;
+    border-radius: 10px;
+    min-height: 70vh;
+    width: 70%;
+    background-color: black;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+.songList
+{
+    margin: 0 25px;
+}
+
+.songItemContainer
+{
+    margin-top:40px;
+}
+.songItem
+{
+    background-color: white;
+    color:black;
+    border-radius: 20px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 5px;
+    padding: 5px 20px;
+}
+
+.timestamp i
+{
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+.songBanner
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#songImage
+{
+    background-image:url("../assets/gif/ganesha.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid;
+    height: 65vh;
+    width: 25vw;
+}
+
+.bottom {
+    position: sticky;
+    bottom:0;
+    background-color: black;
+    color:white;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.songInfo
+{
+    position:absolute;
+    left:0;
+    margin: 2vh 10vw 0 10vw;
+    font-family: 'Oswald', sans-serif;
+}
+
+.songInfo img
+{
+    width:50px;
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+.icons
+{
+    margin-top:20px;
+}
+.icons i
+{
+    padding: 0 5px;
+    cursor: pointer;
+}
+
+#progressBar
+{
+    width: 80vw;
+}
